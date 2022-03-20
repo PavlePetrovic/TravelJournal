@@ -1,0 +1,132 @@
+@import '_fonts.scss';
+
+$cardFont: 10.24px;
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+section{
+    padding: 60px 40px 30px 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F55A5A;
+    color: white;
+    padding-block: 20px;
+
+    h2{
+        font-weight: 500;
+        font-size: 14.4608px;   
+        margin-left: 7px;
+    }
+}
+
+.cardDiv{
+    color: #2B283A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+    .photoDiv{
+
+        .cardDivImg{
+            width: 125px;
+            height: 168px;
+            border-radius: 5px;
+        }
+    }
+    
+    .textDiv{
+        padding-left: 20px;
+
+        .cardLocationDiv{
+            display: flex;
+            align-items: center;
+            font-size: $cardFont;
+    
+            img{
+                width: 8px;
+            }
+    
+            p{
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-left: 4px;
+    
+                a{
+                    text-transform: none;
+                    color: #918E9B;
+                    margin-left: 12px;
+                }
+            }
+        }
+    
+        .cardTitle{
+            padding-top: 6px;
+            font-size: 25px;
+            font-weight: 700;
+        }
+    
+        .cardDate{
+            padding-top: 14px;
+            font-weight: 700;
+            font-size: $cardFont;
+        }
+    
+        .cardDescription{
+            padding-top: 9px;
+            font-weight: 400;
+            font-size: $cardFont;
+            max-width: 330px;
+        }
+    }
+
+}
+
+.lineDiv{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    width: 475px;
+    height: 1px;
+    background-color: #F5F5F5;
+}
+
+@media only screen and (max-width: 560px) {
+
+    section{
+        padding: 40px 10px 5px 10px;
+    }
+    
+    .cardDiv{
+        all: initial;
+        color: #2B283A;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 25px;
+    
+        .photoDiv{
+            padding-bottom: 20px;
+            
+            .cardDivImg{
+                width: 145px;
+                height: 188px;
+                
+            }
+        }
+    }
+
+    .lineDiv{
+        width: 70%;
+    }
+
+}
