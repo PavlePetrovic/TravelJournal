@@ -1,6 +1,6 @@
 # TravelJournal
 
-Web app build with React
+Web site build with React
 
 Take a look: [TravelJournal](https://traveljournalreact.netlify.app/)
 
